@@ -59,10 +59,15 @@ main{
 
 #theme-label{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
+}
+
+label{
     width: 35px;
-    padding:0 5px;
+    padding:5px 3px 5px 5px;
+    letter-spacing: 7.3pt;
+    margin-right: 2pt;
 }
 
 h1{
@@ -104,6 +109,26 @@ input[type=range]::-webkit-slider-thumb{
 }
 input[type=range]::-webkit-slider-thumb:hover{
     filter: brightness(170%);
+}
+
+input[type=range]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+    background-color:var(--Red);
+}
+
+input[type=range]::-ms-thumb{
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+    background-color:var(--Red);
 }
 
 #header>p{
